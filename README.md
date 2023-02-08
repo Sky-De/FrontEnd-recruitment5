@@ -7,7 +7,7 @@ This is a solution to the [frontend-recruitment 5](https://github.com/dnj/develo
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#Screenshot-1)![chrome-capture-2023-1-8 (1)](https://user-images.githubusercontent.com/79264045/217474919-4723e9e6-b2bd-481a-8c2f-7609fc96d7cc.png)
+  - [Screenshot](#Screenshot-1)
 
   - [Gif](#Gif)
   - [Links](#links)
