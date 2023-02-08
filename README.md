@@ -35,7 +35,7 @@ Frontend challenge
 
 ### Links
 
-- Live Site URL: [Click Here](https://frontend-recruitment5.netlify.app/)
+- Live Site URL(Netlify): [Click Here](https://frontend-recruitment5.netlify.app/)
 
 
 ### Built with
