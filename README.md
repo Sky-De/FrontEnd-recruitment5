@@ -30,7 +30,8 @@ Frontend challenge
 
 ![ShowCase](https://user-images.githubusercontent.com/79264045/217475704-5e3badc6-be34-4ea6-a031-2e13138cdf8c.png)
 
-
+### Gif
+![component-gif-min](https://user-images.githubusercontent.com/79264045/217477841-f0e42dc2-f0c9-4906-a0c0-513b4394fd59.gif)
 
 ### Links
 
