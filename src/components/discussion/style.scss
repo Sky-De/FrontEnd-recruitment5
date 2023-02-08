@@ -1,0 +1,23 @@
+@import "../../assets/uti";
+
+.Discussion{
+    // z-index: 2;
+    width: 700px;
+    height: 100vh;
+    padding: 3px;
+    background: $bgColor1;
+    &__startCon{
+        
+        display: flex;
+        margin-bottom: 0.1rem;
+        column-gap: 1.5rem;
+        align-items: center;
+        padding: 0.5rem;
+        background: $bgColor2;
+        border-radius: 10px 10px 0 0;
+        @include min700{
+            padding: 1.25rem;
+        }
+    }
+
+}

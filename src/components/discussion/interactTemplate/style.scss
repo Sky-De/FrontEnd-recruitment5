@@ -1,0 +1,103 @@
+@import '../../../assets/uti';
+
+.InteractTemplate {
+    display: flex;
+    // padding: 2rem;
+    column-gap: 1.2rem;
+    background: $white;
+    padding-bottom: 2rem;
+    
+
+    &__title {
+        display: flex;
+    }
+
+    &__text {
+        color: $textPrimary;
+        font-size: 0.98rem;
+        max-width: 500px;
+        @include min700{
+            margin-top: 0.5rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+            line-height: 1.8rem;
+
+        }
+        a {
+           color: $blue;
+           background: rgba(209, 231, 254, 0.547);
+           padding: 0.1rem;
+           border-radius: 2px;
+           cursor: pointer;
+           text-decoration: none;
+           font-weight: 500;
+           :active{
+            color: inherit;
+           }
+        }
+    }
+
+    &__title--name {
+        font-weight: bold;
+        font-size: 1.1rem;
+        margin-right: 0.5rem;
+        @include min700{
+            font-size: 1.25rem;
+        }
+    }
+    &__title--date {
+        font-size: 0.95rem;
+        color: $textSecondary;
+        margin-right: 0.5rem;
+        font-weight: 500;
+    }
+
+    &__action {
+        display: flex;
+        margin-top: 0.5rem;
+    }
+
+    &__action--likeBtn {
+        cursor: pointer;
+        height: 2.3rem;
+        padding: 0 0.80rem;
+        display: flex;
+        align-items: center;
+        background: $bgColor2;
+        border-radius: 25px;
+       
+
+        .likeIcon {
+            height: 2.5rem;
+            
+            path {
+                fill: $textSecondary;
+            }
+        }
+
+        margin-right: 2rem;
+    }
+
+    &__action--likeBtn.active {
+        background: $blue;
+
+        .likeIcon {
+            path {
+                fill: $white
+            }
+        }
+
+        b {
+            color: $white
+        }
+    }
+
+    &__action--replyBtn {
+        border: none;
+        font-size: 0.95rem;
+        background: transparent;
+        font-weight: bold;
+        color: $blue;
+        cursor: pointer;
+    }
+}

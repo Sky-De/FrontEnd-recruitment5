@@ -1,0 +1,41 @@
+@import "../../../assets/uti";
+.Discussion {
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.15rem;
+        
+    }
+    
+    &__list--item {
+        background: $white;
+        padding: 2rem 2rem 0 2rem;
+        position: relative;
+    }
+
+    &__list--item.active {
+        &::before {
+            content:"";
+            position: absolute;
+            width: 2px;
+            background: $bgColor1;
+            left: 52px;
+            top: 85px;
+            bottom: 20px;
+            @include min700{
+                left: 57px;
+                top: 95px;
+                bottom: 20px;
+            }
+        }
+    }
+
+    &__replies {
+        padding-left: 3.5rem;
+        background: $white;
+        @include min700{
+            padding-left: 4.3rem;
+        }
+    }
+}

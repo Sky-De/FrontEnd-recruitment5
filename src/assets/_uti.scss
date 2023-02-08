@@ -1,0 +1,25 @@
+
+$textPrimary: rgb(48, 4, 135);
+$white:#ffff;
+$placeHolder:#9AA3BB;
+$blue:#235EE7;
+$textSecondary:#909AB4;
+// bgAll
+$bgColor1:#EAEEF2;
+// bgStart
+$bgColor2:#FAFBFC;
+// borderInput
+$borderColor:#E8EEF2;
+
+
+
+@mixin border{
+    border: 1px solid red;
+}
+
+@mixin min700 {
+    @media screen and (min-width:700px) {
+        @content
+    }
+}
+
