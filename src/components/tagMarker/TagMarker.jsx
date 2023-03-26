@@ -1,22 +1,16 @@
-
+import "./style.scss";
 const TagMarker = ({text}) => {
-    
-    const markTgas = (text) => {
-      // regEx for words which starts with "@"
-      const tagCheck = /([@])\w+/g; 
-      let matches = text.match(tagCheck);
-      
-      if( matches ){
-        for (let i = 0; i < matches.length; i++) {
-          text = text.replaceAll(matches[i], `<a href=${matches[i]} className="tagMarked">${matches[i]}</a>`);
-        }
-        return text
-        }else return text
-    } 
   
-  return (
-    <p className="markedText" dangerouslySetInnerHTML={{__html: markTgas(text)}}/>
-  )
+  const taggedWords = text
+  .split(" ")
+  .reduce((result, word) => {
+    if(word.startsWith("@")) result.push(<a className="tagMarked" key={word}>{word}</a>);
+    else result.push(word + " ");
+    return result;
+  },[]);
+  
+  return <p className="markedText">{taggedWords}</p>
+    
 }
 
 export default TagMarker
